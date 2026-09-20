@@ -7,7 +7,7 @@ app = Flask(__name__)
 load_dotenv()
 db_password = os.getenv('DB_PASSWORD')
 
-app.config['SQLALCHEMY_DATABASE_URI'] = f"mysql+pymysql://root:{db_password}@localhost/todoapp"
+app.config['SQLALCHEMY_DATABASE_URI'] = f"mysql+pymysql://avnadmin:{db_password}@mysql-3207d3c7-shrutiknandeshwar-7333.k.aivencloud.com:10604/defaultdb"
 db = SQLAlchemy(app)
 
 class User(db.Model):
